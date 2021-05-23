@@ -1,5 +1,20 @@
 # Login system using Node.js, Express and MySQL
 
+## Issue
+
+Error occurs when connecting to `mysql`. 
+
+Error code:
+
+    `Error: ER_NOT_SUPPORTED_AUTH_MODE: Client does not support authentication protocol requested by server; consider upgrading MySQL client`
+
+Reason:
+
+    Mysql的password的算法不一樣
+
+Solution:
+
+https://yoonow.pixnet.net/blog/post/11141518
 
 ## Note for myself
 Step 1: Install softwares we needed

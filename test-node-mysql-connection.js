@@ -5,7 +5,7 @@ console.log("import lib");
 let connection = mysql.createConnection({
     host: 'localhost', // host for connection
     // port: 3306, // default port for mysql is 3306
-    database: 'test', // database from which we want to connect out node application
+    database: 'nodelogin', // database from which we want to connect out node application
     user: 'root', // username of the mysql connection
     password: '00000000' // password of the mysql connection
 });

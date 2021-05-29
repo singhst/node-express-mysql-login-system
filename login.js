@@ -70,4 +70,20 @@ app.get('/home', function(request, response) {
 	response.end();
 });
 
-app.listen(3000);
+// Start the server
+const PORT = process.env.PORT || 3000;
+
+// normal funciton
+// function logInfo() {
+// 	console.log(`App listening on port ${PORT}.`);
+// 	console.log(`Visit http://localhost:${PORT}/`);
+// 	console.log('Press Ctrl+C to quit.');
+// }
+// app.listen(PORT, logInfo);
+
+// arrow funciton
+app.listen(PORT, () => {
+	console.log(`App listening on port ${PORT}.`);
+	console.log(`Visit http://localhost:${PORT}/`);
+	console.log('Press Ctrl+C to quit.');
+});

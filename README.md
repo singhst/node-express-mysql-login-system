@@ -2,12 +2,28 @@
 
 ## Usage
 
-1. Start the web server,
+1. Check MySQL server is up or not.
+    Start MySQL,
+    ```sh
+    $ sudo /usr/local/mysql/support-files/mysql.server start
+    ```
+
+    Stop MySQL,
+    ```sh
+    $ sudo /usr/local/mysql/support-files/mysql.server stop
+    ```
+
+    Restart MySQL,
+    ```sh
+    $ sudo /usr/local/mysql/support-files/mysql.server restart
+    ```
+
+2. Start the web server,
     ```sh
     $ node login.js
     ```
 
-2. Enter [http://localhost:3000/](http://localhost:3000/) in browser and try the login function. 
+3. Enter [http://localhost:3000/](http://localhost:3000/) in browser and try the login function. 
 
 
 ## Issue
@@ -27,11 +43,19 @@ Solution:
 https://yoonow.pixnet.net/blog/post/11141518
 
 ## Note for myself
+
 Step 1: Install softwares we needed
 
 1. Install `MySQL Community server` in the PC/server first. [Download MySQL](https://dev.mysql.com/downloads/file/?id=505134)
 
 2. Install `node.js` in PC/server. [Download](https://nodejs.org/en/)
+
+    [Explanation: node.js vs npm vs nvm](https://ithelp.ithome.com.tw/articles/10230877)
+        
+        node.js: the runtime 
+        npm: Node Package Manager; manage installed packages for node.js
+        nvm: Node Version Manager; manage version of node.js
+
 
 Step 2: Setting in `MySQL server`
 
@@ -61,6 +85,7 @@ Step 2: Setting in `MySQL server`
     ALTER TABLE `accounts` ADD PRIMARY KEY (`id`);
     ALTER TABLE `accounts` MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
     ```
+
 
 Step 3: Setup project folder and JavaScript runtime environment.
 

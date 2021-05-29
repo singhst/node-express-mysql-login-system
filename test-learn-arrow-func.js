@@ -3,6 +3,8 @@
 // Arrow function pros:
 // variable becomes a function
 //
+// Reference:
+// https://eyesofkids.gitbooks.io/javascript-start-from-es6/content/part4/arrow_function.html
 /////////////////////////////////////
 
 

@@ -4,6 +4,8 @@ var session = require('express-session');
 var bodyParser = require('body-parser');
 var path = require('path');
 
+// Information of connecting to MySQL server
+// default port: 3306
 var connection = mysql.createConnection({
 	host     : 'localhost',
 	user     : 'root',

@@ -1,5 +1,15 @@
 # Login system using Node.js, Express and MySQL
 
+## Usage
+
+1. Start the web server,
+    ```sh
+    $ node login.js
+    ```
+
+2. Enter [http://localhost:3000/](http://localhost:3000/) in browser and try the login function. 
+
+
 ## Issue
 
 Error occurs when connecting to `mysql`. 

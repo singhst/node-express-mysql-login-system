@@ -25,6 +25,9 @@
 
 3. Enter [http://localhost:3000/](http://localhost:3000/) in browser and try the login function. 
 
+## Future
+
+Add "change password" feature, "forgot password" feature.
 
 ## Issue
 
